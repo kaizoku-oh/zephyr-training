@@ -12,6 +12,7 @@ manifest:
         path-prefix: deps
         name-allowlist:
           - nrf
+          - stm32
           - zephyr
           - cmsis
           - hal_nordic
@@ -26,7 +27,6 @@ manifest:
           - sdk-hostap
           - segger
           - tinycrypt
-          - hal_stm32
   self:
     path: app
     west-commands: utility/west-commands/west-commands.yml
