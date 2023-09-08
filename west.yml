@@ -26,6 +26,7 @@ manifest:
           - sdk-hostap
           - segger
           - tinycrypt
+          - hal_stm32
   self:
     path: app
     west-commands: utility/west-commands/west-commands.yml
