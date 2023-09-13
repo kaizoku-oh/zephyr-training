@@ -5,6 +5,7 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(blinky)
 
 target_include_directories(app PUBLIC ${ZEPHYR_BASE}/subsys/net/ip)
+target_include_directories(app PUBLIC ${ZEPHYR_BASE}/../modules/lib/golioth/samples/common/include)
 
 zephyr_library_sources_ifdef(CONFIG_BOARD_NRF7002DK_NRF5340_CPUAPP src/wifi_util.c)
 

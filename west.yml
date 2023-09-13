@@ -27,6 +27,7 @@ manifest:
           - sdk-hostap
           - segger
           - tinycrypt
+          - zcbor
   self:
     path: app
     west-commands: utility/west-commands/west-commands.yml
