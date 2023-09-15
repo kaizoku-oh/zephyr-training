@@ -6,6 +6,8 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(golioth_iot)
 
 target_include_directories(app PUBLIC ${ZEPHYR_BASE}/subsys/net/ip)
+target_include_directories(app PUBLIC ${ZEPHYR_BASE}/../modules/lib/golioth/samples/common/include)
+target_include_directories(app PUBLIC ${ZEPHYR_BASE}/../modules/tee/tf-m/qcbor/inc)
 
 zephyr_library_sources_ifdef(CONFIG_BOARD_NRF7002DK_NRF5340_CPUAPP src/wifi_util.c)
 add_subdirectory(src/network_info)

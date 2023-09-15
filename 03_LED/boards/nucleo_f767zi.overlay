@@ -1,0 +1,16 @@
+/ {
+	aliases {
+		alias-name = &subnode_nodelabel;
+	};
+
+
+	child-node-path {
+		compatible = "zephyr,fake-eeprom";
+
+		size = <0>; /* property required by zephyr,fake-eprom binding */
+
+		subnode_nodelabel: subnode-path {
+			foo = <3>;
+		};
+	};
+};
